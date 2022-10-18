@@ -1,0 +1,47 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+    <center>
+        <h1>QUIZ</h1>
+    </center>
+    
+    {% for judul in title %} 
+    <li>{{ judul }}</li>
+    {% endfor %}
+
+    <body>
+        <center>
+            <br>
+            <h2></h2>
+            <p style="text-align: justify;">Untuk evaluasi diri, Silakan anda bisa mengerjakan quiz berikut.
+            </p> 
+            <ul>
+                <li style="text-align: justify;">Quiz 1 : 
+                <a href="https://kahoot.it/challenge/01925892?challenge-id=98772b8b-72ab-460b-bac3-f83782c6ef2e_1652542818353 ">Quiz 1</a>
+                </li>
+                <li style="text-align: justify;">Quiz 2 : 
+                <a href=" https://wordwall.net/resource/32508102">Quiz 2</a>
+                </li>
+                <li style="text-align: justify;">Quiz 3 : 
+                <a href="https://quizizz.com/join?gc=14480333">Quiz 3</a>
+                </li>
+                <li style="text-align: justify;">Quiz 4 : 
+                <a href="https://app.wizer.me/learn/ZM6BGF">Quiz 4</a>
+                </li>
+            </ul>
+        </center>
+    </body>
+
+    <style>
+        body {
+            background-image: linear-gradient(to right, #e9d2bc, #e9d2bc);
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 0;
+        }
+    
+    </style>
+
+
+{% endblock %}

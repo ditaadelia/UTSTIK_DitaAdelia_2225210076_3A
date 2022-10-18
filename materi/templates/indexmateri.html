@@ -1,0 +1,50 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+    <center>
+        <h1>MATERI</h1>
+    </center>
+    
+    {% for judul in title %} 
+    <li>{{ judul }}</li>
+    {% endfor %}
+
+    <body>
+        <center>
+            <br>
+            <h2>MODUL & CONTOH</h2>
+                <p style="text-align: justify;">Silakan anda bisa mempelajari modul berikut.
+                <a href="https://drive.google.com/file/d/1PsA0HQnsvyfluL4ZV9-iVKyjFbywpdIA/view?usp=sharing">Modul Geometri</a>
+                </p> 
+            <br>
+            <br>
+            <h2>VIDEO PEMBELAJARAN</h2>
+            <p style="text-align: justify;">Silakan anda bisa menonton video pembelajaran berikut.
+            </p>
+                <ul>
+                    <li style="text-align: justify;">Bagian 1 : 
+                    <a href="https://www.youtube.com/watch?v=uu96vz4mwfA">Sudut Pada Garis Transversal</a>
+                    </li>
+                    <li style="text-align: justify;">Bagian 2 : 
+                    <a href="https://www.youtube.com/watch?v=RdEXHsf3C-s">Kekongruenan dan Kesebangunan Part 1</a>
+                    </li>
+                    <li style="text-align: justify;">Bagian 3 : 
+                    <a href="https://www.youtube.com/watch?v=wFvcUgO9X-k">Kekongruenan dan Kesebangunan Part 2</a>
+                    </li>
+                </ul>
+        </center>
+    </body>
+
+    <style>
+        body {
+            background-image: linear-gradient(to right, #e9d2bc, #e9d2bc);
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 0;
+        }
+    
+    </style>
+
+
+{% endblock %}

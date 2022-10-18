@@ -1,0 +1,34 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+    <center>
+        <h1>LATIHAN</h1>
+    </center>
+    
+    {% for judul in title %} 
+    <li>{{ judul }}</li>
+    {% endfor %}
+
+    <body>
+        <center>
+            <br>
+            <h2>LATIHAN SOAL</h2>
+                <p style="text-align: justify;">Silakan anda bisa mengerjakan soal berikut : 
+                <a href="https://drive.google.com/file/d/1PsA0HQnsvyfluL4ZV9-iVKyjFbywpdIA/view?usp=sharing">Latihan</a>
+                </p> 
+        </center>
+    </body>
+
+    <style>
+        body {
+            background-image: linear-gradient(to right, #e9d2bc, #e9d2bc);
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 0;
+        }
+    
+    </style>
+
+
+{% endblock %}

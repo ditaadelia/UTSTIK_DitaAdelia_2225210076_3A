@@ -1,0 +1,84 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+    <center>
+        <h1>BERANDA</h1>
+    </center>
+    
+    {% for judul in title %} 
+    <li>{{ judul }}</li>
+    {% endfor %}
+
+    <br>
+    <body>
+        <center>
+            <h2>PROFIL</h2>
+            <img src="\static\images\fotodita.png" height="350px">
+            <ul>
+                <li style="text-align: justify;">Nama : Dita Adelia
+                </li>
+                <li style="text-align: justify;">NIM : 2225210076
+                </li>
+                <li style="text-align: justify;">Kelas : 3A
+                </li>
+                <li style="text-align: justify;">Jurusan : Pendidikan Matematika
+                </li>
+                <li style="text-align: justify;">Fakultas : Fakultas Keguruan dan Ilmu Pendidikan
+                </li>
+                <li style="text-align: justify;">Perguruan Tinggi : Universitas Sultan Ageng Tirtayasa
+                </li>
+                <li style="text-align: justify;">Alamat : Kec. Pulo Ampel, Kab. Serang - Banten
+                </li>
+            </ul> 
+            <br>
+            <h2>PENDAHULUAN GEOMETRI</h2>
+            <P style="text-align: justify;">Geometri ialah studi matematika yang mengkaji mengenai bangun ruang dengan 
+                berfokus pada pengukuran, pernyataan terkait bentuk, posisi relatif sebuah gambar ilmu 
+                ukur, panjang ruang, dan lain sebagainya. Pada ilmu geometri kita dapat mengonstruksi 
+                berbagai macam bangun datar dan segi banyak. Segi banyak itu sendiri kemudian dapat 
+                digunakan untuk menyusun bangun-bangun ruang seperti segitiga, lingkaran, persegi, persegi 
+                panjang, jajaran genjang, belah ketupat, bola, kerucut, prisma dan lainnya.
+            </P>
+            <P style="text-align: justify;"> Dengan mempelajari ilmu geometri dapat memberikan banyak keterampilan dasar 
+                dan dapat membantu dalam mengasah kemampuan berpikir logika, penalaran analitis dan 
+                pemecahan masalah. Dengan geometri, memungkinkan kita untuk memahami ruang dalam 
+                sebuah kehidupan nyata yang membantu siswa dalam memahami konsep-konsep yang lebih 
+                baik. Namun , di dalam modul ini penyusun memfokuskan pembahasan pada Teorema Sudut 
+                pada Garis Transversal, Segitiga, dan Segiempat. Teorema Phytagoras dan Transformasi 
+                Geometri Tunggal, serta penerapannya dalam koordinat cartesius
+            </P>
+            <br>
+            <h2>PETA KONSEP</h2>
+            <img src="\static\images\petakonsep.png" height="700px">
+            <br>
+            <br>
+            <h2>MORE INFO?</h2>
+            <ul>
+                <li style="text-align: justify;">Gmail : 2225210076@untirta.ac.id
+                </li>
+                <li style="text-align: justify;">Whatsapp : 081311973048
+                </li>
+                <li style="text-align: justify;">LinkIn : Dita Adelia
+                </li>
+                <li style="text-align: justify;">Instagram : @ditaadell_
+                </li>
+                <li style="text-align: justify;">Line : dita.adelia
+                </li>
+            </ul> 
+        </center>
+
+    </body>
+ 
+    <style>
+        body {
+            background-image: linear-gradient(to right, #e9d2bc, #e9d2bc);
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 0;
+        }
+    
+    </style>
+
+{% endblock %}
+
